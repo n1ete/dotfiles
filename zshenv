@@ -1,5 +1,7 @@
-export ZSH="/home/andrea/.oh-my-zsh"
+export ZSH="/home/n1ete/.oh-my-zsh"
 export LC_ALL=en_US.UTF-8
+#export LANG=de_DE.UTF-8
+export LC_TIME=de_DE.UTF-8
 export TERMINAL=alacritty
 export PAGER=less
 export VISUAL=emacs

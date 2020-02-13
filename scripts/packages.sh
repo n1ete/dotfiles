@@ -69,6 +69,7 @@ BASE_PACKAGES=(
     'xterm'
     'zsh'
     'zsh-theme-powerlevel9k'
+    'minicom'
 )
 
 CLI_PACKAGES=(
@@ -197,8 +198,7 @@ if [ "$(uname -m)" == 'x86_64' ]; then
                    'pavucontrol'
                    'vlc'
                    'xorg-xinit')
-    AUR_PACKAGES+=('spotify'
-                   'pulseaudio-ctl')
+    AUR_PACKAGES+=('pulseaudio-ctl')
 fi
 
 installPackages

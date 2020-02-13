@@ -114,12 +114,20 @@ bindsym $mod+Shift+8 move container to workspace $workspace8
 bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace0
 
+# Automatically put applications to scratchpad
+for_window [title="^Joplin$"] mark "joplin", move scratchpad
+for_window [title="^KeePassXC$"] mark "keepassxc", move scratchpad
+
+# Use hotkey to bring a application to front using con_mark
+bindsym Mod1+n [con_mark="joplin"] scratchpad show
+bindsym Mod1+k [con_mark="keepassxc"] scratchpad show
+
 # Always open some programs on specified workspace
-assign [class="firefox"]    $workspace1
-assign [class="emacs"]	   	$workspace2
-assign [class="VirtualBox"]	$workspace5
+assign [class="firefox|chromium"]    $workspace1
+assign [class="emacs|code"]	   	$workspace2
+assign [class="VirtualBox|virt-manager"]	$workspace5
 assign [class="cmus"]		    $workspace8
-assign [class="spotify"]		$workspace8
+assign [class="spotify|cantana"]		$workspace8
 
 # Enable float for some windows
 for_window [class="^Pavucontrol$"] floating enable
@@ -203,4 +211,4 @@ exec --no-startup-id betterlockscreen -w dim
 exec --no-startup-id source ~/.wallpaper.jpeg
 exec --no-startup-id compton --config ~/.config/compton/compton.conf # Compositor for window transparency
 exec --no-startup-id xfce4-power-manager # To monitor batttery
-exec --no-startup-id notify-send "Welcome back Andrea!" -i ~/.images/icons8-dog-100.png # Greeting on startup
+exec --no-startup-id notify-send "Maschinen bereit Kapitän!" -i ~/.images/icons8-dog-100.png # Greeting on startup
