@@ -4,10 +4,22 @@
 #  / /_\__ \ | | | | | (__
 # /____|___/_| |_|_|  \___|
 
+####################################################
+# aliases n1ete
+###################################################
+alias cp="rsync -ah --inplace --no-whole-file --info=progress2"
+alias zj-mgmt="zerotier-cli join yournetworkid"
+alias zl-mgmt="zerotier-cli leave yournetworkid"
+alias grep="grep -i --color=auto"
+#############################
+# dotfiles managed with git #
+#############################
+alias kobsdots='/usr/bin/git --git-dir=/home/n1ete/git/kobsdots/ --work-tree=/home/n1ete'
+
 # Aliases for a few useful commands
 alias mirrorUpdate='sudo reflector --latest 250 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
 alias pacmanGhost='~/.scripts/pacman.sh'
-alias shivita='toilet -f mono12 -F rainbow 'andrea' | ponythink -f winona'
+alias shivita='toilet -f mono12 -F rainbow 'n1ete' | ponythink -f winona'
 alias emacs='emacs -nw'
 alias ls='lsd'
 alias l='ls -l'

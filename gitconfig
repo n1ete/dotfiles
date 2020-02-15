@@ -35,4 +35,4 @@
 #	allowed = AKIAIOSFODNN7EXAMPLE
 #	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 [init]
-	templateDir = /home/andrea/.git-templates/git-secrets
+	templateDir = /home/n1ete/.git-templates/git-secrets

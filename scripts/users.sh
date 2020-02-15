@@ -10,8 +10,8 @@ operations:
     -s <options> define user's default shell (zsh if blank)
 
 Examples:
-$ sudo ./users.sh -rc andrea -k add
-# ./users.sh -c andrea -k gen -s bash"
+$ sudo ./users.sh -rc n1ete -k add
+# ./users.sh -c n1ete -k gen -s bash"
 
 source $(dirname "$0")/shared.sh
 
